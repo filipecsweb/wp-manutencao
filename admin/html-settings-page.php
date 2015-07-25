@@ -4,7 +4,7 @@
  *
  * @since 	1.0.0
  * @author 	Filipe Seabra <eu@filipecsweb.com.br>
- * @version 1.0.1
+ * @version 1.0.2
  */
 if(!defined('ABSPATH')){
 	exit;
@@ -14,8 +14,6 @@ if(!defined('ABSPATH')){
 <div class="wrap">
 	<h2><?php echo esc_html(get_admin_page_title()); ?></h2>
 	
-	<?php settings_errors(); ?>
-
 	<form action="options.php" method="post">
 
 		<?php settings_fields($this->option_name); ?>

@@ -4,8 +4,8 @@
  * Plugin Uri: https://wordpress.org/plugins/wp-manutencao/
  * Author: Filipe Seabra
  * Author URI: //filipecsweb.com.br/
- * Version: 1.0.1
- * Description: Coloque seu WordPress em manutenção ou redirecione-o para outra URL. Apenas administradores logados verão o site.
+ * Version: 1.0.2
+ * Description: Coloque seu WordPress em manutenção ou redirecione-o para outra URL. Apenas administradores logados verão o site. É possível liberar acesso a IPs.
  * License: GPLv2 or later
  * License URI: //www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: wp-manutencao
