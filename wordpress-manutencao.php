@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: WordPress Manutenção
- * Plugin Uri:
+ * Plugin Uri: https://wordpress.org/plugins/wp-manutencao/
  * Author: Filipe Seabra
  * Author URI: //filipecsweb.com.br/
- * Version: 1.0.0
- * Description: Adiciona opção para colocar seu site WordPress em manutenção, fora do ar, etc. A partir daí apenas administradores logados podme ver o site e desabilitar o modo de manutenção.
+ * Version: 1.0.1
+ * Description: Coloque seu WordPress em manutenção ou redirecione-o para outra URL. Apenas administradores logados verão o site.
  * License: GPLv2 or later
  * License URI: //www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: wp-manutencao
@@ -17,8 +17,8 @@ if(!defined('ABSPATH')){
 
 define('WP_MANUTENCAO_PATH', plugin_dir_path(__FILE__));
 define('WP_MANUTENCAO_URL', plugin_dir_url(__FILE__));
-define('WP_MANUTENCAO_VERSION', '1.0.0');
-define('PLUGIN_NAME', 'wordpress-manutencao');
+define('WP_MANUTENCAO_VERSION', '1.0.1');
+define('PLUGIN_NAME', 'wp-manutencao');
 
 /**
  * The code that runs during plugin activation.
@@ -57,6 +57,11 @@ if(!class_exists('WP_Manutencao')):
 		protected static $instance = null;
 
 		/**
+		 * @var 	string 	$page 	Settings page slug
+		 */
+		public $page = 'fswpma_manutencao';
+
+		/**
 		 * Initialize plugin actions and filters
 		 */
 		public function __construct(){
@@ -68,7 +73,12 @@ if(!class_exists('WP_Manutencao')):
 			/**
 			 * Add plugin action links
 			 */
-			add_action('plugin_action_links_'.plugin_basename(__FILE__), array($this, 'load_plugin_action_links'));	
+			add_action('plugin_action_links_'.plugin_basename(__FILE__), array($this, 'load_plugin_action_links'));
+
+			/**
+			 * Add admin JavaScript and StyleSheet
+			 */
+			add_action('admin_enqueue_scripts', array($this, 'enqueue_javascript_stylesheet'));
 
 			/**
 			 * Load include files
@@ -88,7 +98,7 @@ if(!class_exists('WP_Manutencao')):
 		/**
 		 * Load plugin text domain
 		 */
-		function load_plugin_text_domain(){
+		public function load_plugin_text_domain(){
 			load_plugin_textdomain('wp-manutencao', false, dirname(plugin_basename(__FILE__)).'/languages/');
 		}
 
@@ -98,12 +108,26 @@ if(!class_exists('WP_Manutencao')):
 		 * @param 	array 	$links
 		 * @return 	array 	$links 	new custom links
 		 */
-		function load_plugin_action_links($links){
-			$settings_url = admin_url('options-general.php?page=fswpma_manutencao');
+		public function load_plugin_action_links($links){
+			$settings_url = admin_url('options-general.php?page='.$this->page);
 
 			$links[] = '<a href="'.esc_url($settings_url).'">'.__('Settings').'</a>';
 
 			return $links;
+		}
+
+		/**
+		 * Load admin JavaScript and StyleSheet
+		 */
+		public function enqueue_javascript_stylesheet($hook){			
+			if('settings_page_'.$this->page != $hook){
+				return;
+			}
+			else{
+				wp_enqueue_script(PLUGIN_NAME.'-admin-js', WP_MANUTENCAO_URL.'admin/js/wp-manutencao-admin.js', array('jquery'), WP_MANUTENCAO_VERSION, false);
+
+				wp_enqueue_style(PLUGIN_NAME.'-admin-css', WP_MANUTENCAO_URL.'admin/css/wp-manutencao-admin.css', false, WP_MANUTENCAO_VERSION);			
+			}			
 		}
 
 		/**
@@ -114,7 +138,7 @@ if(!class_exists('WP_Manutencao')):
 
 			$settings = new Wordpress_Manutencao_Settings();
 
-			$options = get_option($settings->option);
+			$options = get_option($settings->option_name);
 			
 			if(isset($options['activate']) && $options['activate']){
 				include_once 'public/class-wordpress-manutencao-public.php';
