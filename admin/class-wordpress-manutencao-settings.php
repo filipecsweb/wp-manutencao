@@ -5,7 +5,7 @@
  * 
  * @since 	1.0.0
  * @author 	Filipe Seabra <eu@filipecsweb.com.br>
- * @version 1.0.1
+ * @version 1.0.3
  */
 if(!defined('ABSPATH')){
 	exit;
@@ -55,27 +55,6 @@ class Wordpress_Manutencao_Settings{
 	}
 
 	public function fswpma_plugin_settings(){
-		/*add_settings_section(
-			'fswpma_basic_section', // id
-			__('Ative o módulo e escolha seu modo de manutenção', 'wp-manutencao'), // title
-			array($this, 'fswpma_basic_section_callback'), // callback
-			$this->page // page
-		);*/
-
-		/*add_settings_section(
-			'fswpma_page_type_section', // id
-			__('Construa seu conteúdo ou use o padrão do plugin', 'wp-manutencao'), // title
-			array($this, 'fswpma_page_type_section_callback'), // callback
-			$this->page // page
-		);*/
-
-		/*add_settings_section(
-			'fswpma_redirect_type_section', // id
-			__('Defina a URL de redirecionamento', 'wp-manutencao'), // title
-			array($this, 'fswpma_redirect_type_section_callback'), // callback
-			$this->page // page
-		);*/
-
 		add_settings_field(
 			'activate',
 			__('Ativar?', 'wp-manutencao'),
@@ -83,7 +62,7 @@ class Wordpress_Manutencao_Settings{
 			$this->page,
 			'fswpma_basic_section',
 			array(
-				'id'			=>	'activate',
+				'id'	=>	'activate',
 				'desc'	=>	__('Marque "Sim" para ativar a página de manutenção e, sem seguida, escolha seu modo de manutenção.')
 			)
 		);
@@ -172,33 +151,6 @@ class Wordpress_Manutencao_Settings{
 		
 		register_setting($this->option_name, $this->option_name, array($this, 'validate_fswpma_settings'));
 	}
-
-	/**
-	 * Basic options section callback
-	 *
-	 * @return 	void
-	 */
-	/*public function fswpma_basic_section_callback(){
-
-	}*/
-
-	/**
-	 * Page type section callback
-	 *
-	 * @return 	void
-	 */
-	/*public function fswpma_page_type_section_callback(){
-
-	}*/
-
-	/**
-	 * Redirect type section callback
-	 *
-	 * @return 	void
-	 */
-	/*public function fswpma_redirect_type_section_callback(){
-
-	}*/	
 
 	/**
 	 * Radio element callback

@@ -4,7 +4,7 @@
  *
  * @since 	1.0.0
  * @author 	Filipe Seabra <eu@filipecsweb.com.br>
- * @version 1.0.2
+ * @version 1.0.3
  */
 if(!defined('ABSPATH')){
 	exit;
@@ -17,9 +17,11 @@ if(!defined('ABSPATH')){
 	<form action="options.php" method="post">
 
 		<?php settings_fields($this->option_name); ?>
-	
-		<table class="form-table">
-			<h3><?php echo __('Ative o módulo e escolha seu modo de manutenção', 'wp-manutencao'); ?></h3>
+        
+        <h3><?php echo __('Ative o módulo e escolha seu modo de manutenção', 'wp-manutencao'); ?></h3>
+        <h6 style="letter-spacing:0.1px;"><?php echo "&rarr; <u>" . __('CASO USE UM PLUGIN PARA ARMAZENAR CACHE, ENTÃO, LIMPE-O SEMPRE QUE ATIVAR OU DESATIVAR A FUNCIONALIDADE DESTE PLUGIN.', 'wp-manutencao') . "</u>"; ?></h6>
+		
+        <table class="form-table">			
 			<?php do_settings_fields($this->page, 'fswpma_basic_section'); ?>
 		</table>
 
@@ -35,15 +37,10 @@ if(!defined('ABSPATH')){
 
 	</form>
 
-	<div class="fs_rodape">
-		<p><?php echo __('Achou a ferramenta útil? Faça uma doação... assim você ajuda com a manutenção e criação de todos os projetos gratuitos.', 'woocommerce-parcelas'); ?></p>
-		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-			<input type="hidden" name="cmd" value="_s-xclick">
-			<input type="hidden" name="hosted_button_id" value="QM6NM5RMLQ9L4">
-			<input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Doe para FilipeCS Web">
-			<img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
-		</form>
-		<hr />
-		<?php echo '<a class="button-secondary" href="//filipecsweb.com.br/?p=43" target="_blank">' . __('Bugs e Sugestões', 'woocommerce-parcelas') . '</a>'; ?>
-	</div>
+	<div class="section">
+        <p><?php echo __('Colabore com o desenvolvimento de plugins gratuitos fazendo uma doação:') ?></p>
+        <iframe style="width:100%; max-width:100%; height:30px;" src="//filipecsweb.com.br/plugin-footer.html" frameborder="0" scrolling="no"></iframe>
+
+        <?php echo '<a class="button-secondary" href="//filipecsweb.com.br/?p=43" target="_blank">' . __('Bugs e Sugestões', 'woocommerce-parcelas') . '</a>'; ?>
+    </div>
 </div>
