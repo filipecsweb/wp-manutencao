@@ -4,8 +4,8 @@
  * Plugin Uri: https://wordpress.org/plugins/wp-manutencao/
  * Author: Filipe Seabra
  * Author URI: //filipecsweb.com.br/
- * Version: 1.0.2
- * Description: Coloque seu WordPress em manutenção ou redirecione-o para outra URL. Apenas administradores logados verão o site. É possível liberar acesso a IPs.
+ * Version: 1.0.3
+ * Description: Coloque seu WordPress em manutenção ou redirecione-o para uma URL. Apenas administradores logados verão o site. É possível liberar acesso a IPs.
  * License: GPLv2 or later
  * License URI: //www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: wp-manutencao
@@ -17,8 +17,8 @@ if(!defined('ABSPATH')){
 
 define('WP_MANUTENCAO_PATH', plugin_dir_path(__FILE__));
 define('WP_MANUTENCAO_URL', plugin_dir_url(__FILE__));
-define('WP_MANUTENCAO_VERSION', '1.0.1');
-define('PLUGIN_NAME', 'wp-manutencao');
+define('WP_MANUTENCAO_VERSION', '1.0.3');
+define('WP_MANUTENCAO_SLUG', 'wp-manutencao');
 
 /**
  * The code that runs during plugin activation.
@@ -124,9 +124,9 @@ if(!class_exists('WP_Manutencao')):
 				return;
 			}
 			else{
-				wp_enqueue_script(PLUGIN_NAME.'-admin-js', WP_MANUTENCAO_URL.'admin/js/wp-manutencao-admin.js', array('jquery'), WP_MANUTENCAO_VERSION, false);
+				wp_enqueue_script(WP_MANUTENCAO_SLUG.'-admin', WP_MANUTENCAO_URL.'admin/js/wp-manutencao-admin.js', array('jquery'), WP_MANUTENCAO_VERSION, false);
 
-				wp_enqueue_style(PLUGIN_NAME.'-admin-css', WP_MANUTENCAO_URL.'admin/css/wp-manutencao-admin.css', false, WP_MANUTENCAO_VERSION);			
+				wp_enqueue_style(WP_MANUTENCAO_SLUG.'-admin', WP_MANUTENCAO_URL.'admin/css/wp-manutencao-admin.css', false, WP_MANUTENCAO_VERSION);			
 			}			
 		}
 

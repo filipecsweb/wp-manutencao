@@ -1,17 +1,17 @@
 === WordPress Manutenção ===
 
-Contributors: filiprimo
+Contributors: filiprimo, webapex
 Donate link: http://filipecsweb.com.br/doacoes
 Tags: manutenção, maintenance, página em manutenção, em breve
 Requires at least: 4.0
-Tested up to: 4.2
+Tested up to: 4.3
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Coloque seu WordPress em manutenção, de forma simples e objetiva. E ao mesmo tempo, escolha entre várias opções
+Coloque seu WordPress em manutenção, de forma simples e objetiva. E, ao mesmo tempo, escolha entre várias opções:
 
 1. Desabilite o modo de manutenção sem precisar desativar o plugin;
 
@@ -36,6 +36,9 @@ Coloque seu WordPress em manutenção, de forma simples e objetiva. E ao mesmo t
 3. Exemplo de layout para a página de manutenção
 
 == Changelog ==
+
+= 1.0.3 =
+* Adicionada informação com relação à limpeza do cache.
 
 = 1.0.2 =
 * A descrição sobre o plugin foi melhorada e um bug foi corrigido.
