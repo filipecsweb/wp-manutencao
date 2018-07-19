@@ -1,4 +1,4 @@
-# WooCommerce Parcelas
+# WordPress Manutencao
 
 Set your wordpress website for maintenance in a simple and objetive way. At the same time you have some options like:
 * Deactive maintenance mode without deactivating the plugin itself.
