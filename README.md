@@ -35,4 +35,4 @@ See also the list of [contributors](https://github.com/filipecsweb/wordpress-man
 
 ## License
 
-This project is licensed under the GPL-3.0 license - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the GPL-3.0 license.

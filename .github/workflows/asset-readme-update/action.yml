@@ -1,6 +1,6 @@
 # https://github.com/10up/action-wordpress-plugin-asset-update
 
-name: 'WordPress.org plugin asset/readme update'
+name: 'Plugin asset/readme update'
 description: 'Deploy readme and asset updates to the WordPress plugins repository'
 runs:
   using: 'composite'
