@@ -1,71 +1,51 @@
 <?php
 /**
- * This file contains html for the maintenance page
+ * This file contains html for the maintenance page.
  *
- * @since 	1.0.0
- * @author 	Filipe Seabra <eu@filipecsweb.com.br>
- * @version 1.0.1
+ * @since     1.0.0
+ * @author    Filipe Seabra <filipecseabra@gmail.com>
+ * @version   1.0.4
  */
-if(!defined('ABSPATH')){
-	exit;
+if (! defined('ABSPATH'))
+{
+    exit;
 }
 
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+if ('page' == $settings['maintenance_type']): ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo('charset'); ?>"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
 
-<?php if('page' == $settings['maintenance_type']): ?>
-	<head>
-		<meta charset="<?php bloginfo('charset'); ?>" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="profile" href="http://gmpg.org/xfn/11"/>
+    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
+    <link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'/>
 
-		<link rel="profile" href="http://gmpg.org/xfn/11" />
-		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-		
-		<!-- Google font -->
-		<link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-		<title><?php bloginfo('name'); ?></title>
+    <title><?php bloginfo('name'); ?></title>
 
-	    <style>
-	    	body{
-	    		border: 0;
-	    		margin: 0;
-	    		padding: 0;
-	    	}
-			<?php echo $settings['css']; ?>
-	    </style>
-	</head>
+    <style>
+        body {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
 
-	<body>
-		<?php echo $settings['html']; ?>
-		
-		<script type="text/javascript">
-			<?php echo $settings['js']; ?>
-		</script>		
-	</body>
+        <?php echo $settings['css']; ?>
+    </style>
+</head>
+<body>
+<?php echo $settings['html']; ?>
 
-<?php elseif('redirect' == $settings['maintenance_type']): ?>
-	<head>
-		<meta charset="<?php bloginfo('charset'); ?>" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-		<link rel="profile" href="http://gmpg.org/xfn/11" />
-		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-		
-		<title><?php bloginfo('name'); ?></title>
-	</head>
-
-	<body>
-		<?php header("Location: ".$settings['redirect_url']); ?>
-	</body>
-
-<?php else: ?>
-<?php die(__('Escolha um modo de manuten&ccedil;&atilde;o')); ?>
-
-<?php endif; ?>
-
+<script type="text/javascript"><?php echo $settings['js']; ?></script>
+</body>
 </html>
-
-<?php
+<?php elseif ('redirect' == $settings['maintenance_type']):
+    header("Location: " . $settings['redirect_url']);
+else:
+    wp_die(__('Escolha um modo de manutenção', 'wp-manutencao'));
+endif;
 
 exit;

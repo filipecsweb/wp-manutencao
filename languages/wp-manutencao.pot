@@ -1,7 +1,8 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Manutenção\n"
-"POT-Creation-Date: 2015-07-25 19:22-0300\n"
+"POT-Creation-Date: 2017-06-26 19:11-0300\n"
 "PO-Revision-Date: 2015-07-25 19:23-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -9,131 +10,135 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.3\n"
-"X-Poedit-Basepath: ../Dropbox/WordPress/Plugins/wordpress-manutencao/trunk\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: admin/class-wordpress-manutencao-settings.php:42
+#: admin/class-wordpress-manutencao-settings.php:46
 msgid "WordPress Manutenção"
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:43
+#: admin/class-wordpress-manutencao-settings.php:47
 msgid "Manutenção"
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:81
+#: admin/class-wordpress-manutencao-settings.php:66
 msgid "Ativar?"
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:87
+#: admin/class-wordpress-manutencao-settings.php:72
 msgid ""
 "Marque \"Sim\" para ativar a página de manutenção e, sem seguida, escolha "
 "seu modo de manutenção."
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:93
+#: admin/class-wordpress-manutencao-settings.php:78
 msgid "Modo de manutenção"
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:99
+#: admin/class-wordpress-manutencao-settings.php:84
 msgid "Escolha seu modo de manutenção"
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:105
+#: admin/class-wordpress-manutencao-settings.php:90
 msgid "Endereços de IP liberados"
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:112
+#: admin/class-wordpress-manutencao-settings.php:98
 msgid ""
 "Você pode inserir endereços de IP que continuarão vendo o site normalmente. "
 "SEPARE OS ENDEREÇOS por vírgula!<br />Basta deixar em branco para não "
 "utilizar essa opção."
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:118
+#: admin/class-wordpress-manutencao-settings.php:104
 msgid "HTML"
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:126
+#: admin/class-wordpress-manutencao-settings.php:113
 msgid ""
 "Insira seu conteúdo em HTML que deve aparecer enquanto o site estiver em "
 "manutenção.<br />Para voltar ao padrão salve sem conteúdo, e depois salve "
 "novamente."
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:132
+#: admin/class-wordpress-manutencao-settings.php:119
 msgid "CSS"
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:140
+#: admin/class-wordpress-manutencao-settings.php:128
 msgid ""
 "Insira seu CSS para customizar seu conteúdo em HTML.<br />Para voltar ao "
 "padrão salve sem conteúdo, e depois salve novamente."
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:146
+#: admin/class-wordpress-manutencao-settings.php:134
 msgid "JavaScript"
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:154
+#: admin/class-wordpress-manutencao-settings.php:143
 msgid ""
 "Você pode inserir conteúdo em JavaScript.<br />Para voltar ao padrão salve "
 "sem conteúdo, e depois salve novamente."
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:160
+#: admin/class-wordpress-manutencao-settings.php:149
 msgid "Digite a URL"
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:169
+#: admin/class-wordpress-manutencao-settings.php:158
 msgid "Digite a sua URL com http:// ou https://"
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:230
+#: admin/class-wordpress-manutencao-settings.php:194
 msgid "Selecione..."
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:231
+#: admin/class-wordpress-manutencao-settings.php:195
 msgid "Página de manutenção"
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:232
+#: admin/class-wordpress-manutencao-settings.php:196
 msgid "Redirecionamento"
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:253
+#: admin/class-wordpress-manutencao-settings.php:220
 msgid "Algumas melhorias estão sendo implementadas"
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:254
+#: admin/class-wordpress-manutencao-settings.php:221
 msgid "Tome um café e volte em alguns instantes..."
 msgstr ""
 
-#: admin/class-wordpress-manutencao-settings.php:255
+#: admin/class-wordpress-manutencao-settings.php:222
 msgid "Obrigado"
 msgstr ""
 
-#: admin/html-settings-page.php:24
+#: admin/html-settings-page.php:19
+msgid "Geral"
+msgstr ""
+
+#: admin/html-settings-page.php:20
+msgid "Solucionar problemas"
+msgstr ""
+
+#: admin/html-settings-page.php:28
 msgid "Ative o módulo e escolha seu modo de manutenção"
 msgstr ""
 
-#: admin/html-settings-page.php:41
+#: admin/html-settings-page.php:29
 msgid ""
-"Achou a ferramenta útil? Faça uma doação... assim você ajuda com a "
-"manutenção e criação de todos os projetos gratuitos."
+"CASO USE UM PLUGIN PARA ARMAZENAR CACHE, ENTÃO, LIMPE-O SEMPRE QUE ATIVAR "
+"OU DESATIVAR A FUNCIONALIDADE DESTE PLUGIN."
 msgstr ""
 
-#: admin/html-settings-page.php:49
-msgid "Bugs e Sugestões"
+#: public/html-maintenance-page.php:48
+msgid "Escolha um modo de manutenção"
 msgstr ""
 
-#: public/html-maintenance-page.php:63
-msgid "Escolha um modo de manuten&ccedil;&atilde;o"
-msgstr ""
-
-#: wordpress-manutencao.php:114
+#: wordpress-manutencao.php:125
 msgid "Settings"
 msgstr ""
