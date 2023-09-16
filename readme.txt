@@ -1,7 +1,7 @@
 === WordPress Manutenção ===
 
 Contributors: filiprimo
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BPVZJZ2WG8ZPG
+Donate link: https://filipeseabra.me/doar/
 Tags: manutenção, maintenance, em breve, coming soon, construction, construction
 Tested up to: 6.3
 Requires at least: 4.9

@@ -3,7 +3,7 @@
  * This file manages whether the maintenance page is going to be viewed or not.
  *
  * @since     1.0.0
- * @author    Filipe Seabra <filipecseabra@gmail.com>
+ * @author    Filipe Seabra
  * @version   1.0.4
  */
 if (! defined('ABSPATH'))
