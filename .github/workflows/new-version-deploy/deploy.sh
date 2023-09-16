@@ -72,9 +72,9 @@ generate_zip() {
   fi
 }
 
-# Bail early if the plugin version is already published.
+# Delete tag if it exists.
 if [[ -d "tags/$VERSION" ]]; then
-  svn delete "${SVN_URL}tags/$VERSION" -m "Delete tag $VERSION"
+  svn delete "tags/$VERSION"
 fi
 
 if [[ "$BUILD_DIR" = false ]]; then
