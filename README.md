@@ -1,7 +1,7 @@
 # WordPress Manutencao
 
-Set your wordpress website for maintenance in a simple and objetive way. At the same time you have some options like:
-* Deactive maintenance mode without deactivating the plugin itself.
+Set your WordPress website for maintenance in a simple way. At the same time you have some options like:
+* Deactivate maintenance mode without deactivating the plugin itself.
 * Choose between two maintenance types: HTML Maintenance Page or you can set a redirecting URL to redirect the user to.
 * Build your own maintenance page using your own HTML, CSS and JavasScript. Or you can always use the default maintenance page template.
 * Only logged admins can see the website, but you can set as many IP addresses as you want which can also have access.
@@ -13,7 +13,7 @@ You have to install this plugin in an WordPress installation.
 ### Installing
 
 * Go to Plugins > Add New.
-* Search for wordpress manutencao.
+* Search for "WordPress manutencao".
 * When you see it, click on Install Now, wait and then active it.
 
 ## Built With
@@ -24,14 +24,8 @@ The CMS the plugin was built to.
 [gulp.js](https://gulpjs.com/)  
 The toolkit to automate tasks like minifying.
 
-<a href='https://browserstack.com'><img src='https://goo.gl/28nGQU' alt='BrowserStack' height='60'/></a>  
+![](https://browserstack.wpenginepowered.com/wp-content/themes/browserstack/img/bstack-logo-global.svg)   
 BrowserStack is a testing platform that makes sure this plugin runs correctly in every browser. They also love open source projects!
-
-## Authors
-
-* [filipecsweb](https://github.com/filipecsweb)
-
-See also the list of [contributors](https://github.com/filipecsweb/wordpress-manutencao/graphs/contributors) who participated in this project.
 
 ## License
 
