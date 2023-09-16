@@ -3,7 +3,7 @@
  * This file contains the HTML form for the plugin
  *
  * @since     1.0.0
- * @author    Filipe Seabra <filipecseabra@gmail.com>
+ * @author    Filipe Seabra
  * @version   1.0.3
  */
 if (! defined('ABSPATH'))
@@ -42,15 +42,15 @@ if (! defined('ABSPATH'))
         </div>
 
         <div id="troubleshooting-tab" class="section">
-            <p>Acesse a área oficial de suporte ao plugin WordPress Manutenção e poste sua <strong>sugestão</strong>,
-                <strong>crítica</strong> ou <strong>dúvida</strong> por lá. Eu ou outras pessoas sempre estaremos
-                dipostos a te ajudar:</p>
-            <p><a href="https://wordpress.org/support/plugin/wp-manutencao" target="_blank">https://wordpress.org/support/plugin/wp-manutencao</a>
+            <p>Acesse a área oficial de suporte ao plugin e poste sua mensagem lá:</p>
+            <p>
+                <a href="https://wordpress.org/support/plugin/wp-manutencao/" target="_blank">https://wordpress.org/support/plugin/wp-manutencao</a>
             </p>
             <hr/>
             <p>Se este plugin é útil para você, considere fazer uma doação e me ajude a mante-lo sempre atualizado:</p>
-            <p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BPVZJZ2WG8ZPG"
-                  target="_blank">CLIQUE AQUI PARA DOAR</a></p>
+            <p>
+                <a href="https://filipeseabra.me/doar/" target="_blank">CLIQUE AQUI PARA DOAR</a>
+            </p>
         </div>
 
         <?php submit_button(); ?>

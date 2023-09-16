@@ -3,7 +3,7 @@
  * This file contains html for the maintenance page.
  *
  * @since     1.0.0
- * @author    Filipe Seabra <filipecseabra@gmail.com>
+ * @author    Filipe Seabra
  * @version   1.0.4
  */
 if (! defined('ABSPATH'))
