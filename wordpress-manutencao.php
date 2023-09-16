@@ -3,11 +3,9 @@
  * Plugin Name: WordPress Manutenção
  * Plugin Uri: https://wordpress.org/plugins/wp-manutencao/
  * Description: Coloque seu WordPress em manutenção ou redirecione-o para uma URL. Apenas administradores logados verão o site. É possível liberar acesso a IPs
- * Version: 1.0.4
  * Author: Filipe Seabra
- * Author URI: http://seusobrinho.com.br
- * Requires at least: 4.3
- * Tested up to: 4.8
+ * Author URI: https://filipeseabra.me/
+ * Version: 1.0.4
  * Text Domain: wp-manutencao
  * Domain Path: /languages/
  */
