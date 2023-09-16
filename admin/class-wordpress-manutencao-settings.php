@@ -5,7 +5,6 @@
  *
  * @since     1.0.0
  * @author    Filipe Seabra
- * @version   1.0.4
  */
 if (! defined('ABSPATH'))
 {

@@ -5,7 +5,7 @@
  * Description: Coloque seu WordPress em manutenção ou redirecione-o para uma URL. Apenas administradores logados verão o site. É possível liberar acesso a IPs
  * Author: Filipe Seabra
  * Author URI: https://filipeseabra.me/
- * Version: 1.0.4
+ * Version: 1.0.5
  * Text Domain: wp-manutencao
  * Domain Path: /languages/
  */
@@ -17,7 +17,7 @@ if (! defined('ABSPATH'))
 
 define('WP_MANUTENCAO_PATH', plugin_dir_path(__FILE__));
 define('WP_MANUTENCAO_URL', plugin_dir_url(__FILE__));
-define('WP_MANUTENCAO_VERSION', '1.0.4');
+define('WP_MANUTENCAO_VERSION', '1.0.5');
 define('WP_MANUTENCAO_SLUG', 'wp-manutencao');
 
 /**

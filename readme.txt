@@ -6,7 +6,7 @@ Tags: manutenção, maintenance, em breve, coming soon, construction, constructi
 Tested up to: 6.3
 Requires at least: 4.9
 Requires PHP: 7.2
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -37,6 +37,9 @@ Coloque seu WordPress em manutenção, de forma simples e objetiva. E, ao mesmo 
 3. Exemplo de layout para a página de manutenção
 
 == Changelog ==
+
+= 1.0.5 =
+* Minor changes.
 
 = 1.0.4 =
 * Corrigidos erros que eram mostrados quando Mode de Debug estava habilitado;
