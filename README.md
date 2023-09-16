@@ -29,4 +29,4 @@ BrowserStack is a testing platform that makes sure this plugin runs correctly in
 
 ## License
 
-This project is licensed under the GPL-3.0 license - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the GPL-3.0 license.

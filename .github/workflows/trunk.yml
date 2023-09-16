@@ -20,5 +20,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: WordPress.org plugin asset/readme update
+      - name: Step - Plugin asset/readme update
         uses: ./.github/workflows/asset-readme-update
