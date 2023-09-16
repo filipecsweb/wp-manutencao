@@ -1,11 +1,11 @@
 === WordPress Manutenção ===
 
-Contributors: filiprimo, webapex
-Donate link: http://filipecsweb.com.br/doacoes
+Contributors: filiprimo
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BPVZJZ2WG8ZPG
 Tags: manutenção, maintenance, página em manutenção, em breve
-Requires at least: 4.0
-Tested up to: 4.3
-Stable tag: trunk
+Requires at least: 4.3
+Tested up to: 4.8
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,10 @@ Coloque seu WordPress em manutenção, de forma simples e objetiva. E, ao mesmo 
 
 == Changelog ==
 
+= 1.0.4 =
+* Corrigidos erros que eram mostrados quando Mode de Debug estava habilitado;
+* Corrigido erro de redirecionamento.
+
 = 1.0.3 =
 * Adicionada informação com relação à limpeza do cache.
 
@@ -49,8 +53,3 @@ Coloque seu WordPress em manutenção, de forma simples e objetiva. E, ao mesmo 
 
 = 1.0.0 =
 * Lançamento do plugin
-
-== Upgrade Notice ==
-
-= 1.0.2 =
-* Um bug foi corrigido.
