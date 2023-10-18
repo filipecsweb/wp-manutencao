@@ -19,10 +19,6 @@ try {
 		throw new Exception( sprintf( 'The autoload file was not found. File: "%s".', __DIR__ . '/vendor/autoload.php' ) );
 	}
 
-	if ( class_exists( 'WpManutencao' ) ) {
-		throw new Exception( sprintf( 'The plugin class already exists. Class: "%s".', 'WpManutencao' ) );
-	}
-
 	require_once __DIR__ . '/vendor/autoload.php';
 } catch ( Exception $e ) {
 	error_log( $e->getMessage() );
