@@ -4,23 +4,23 @@ Contributors: filiprimo
 Donate link: https://filipeseabra.me/doar/
 Tags: manutenção, maintenance, em breve, coming soon, construction, construction
 Tested up to: 6.3
-Requires at least: 4.9
-Requires PHP: 7.2
-Stable tag: 1.0.5
+Requires at least: 5.4
+Requires PHP: 7.4
+Stable tag: 1.0.6
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
-Coloque seu WordPress em manutenção, de forma simples e objetiva. E, ao mesmo tempo, escolha entre várias opções:
+Coloque o seu site em manutenção de forma simples e objetiva. Ao mesmo tempo, escolha entre várias opções:
 
 1. Desabilite o modo de manutenção sem precisar desativar o plugin;
 
-2. Escolha seu modo de manutenção: você pode usar uma página de manutenção ou escolher uma URL para redirecionamento;
+2. Escolha o seu modo de manutenção: você pode usar uma página de manutenção ou escolher uma URL para redirecionamento;
 
-3. Construa sua página de manutenção, definindo seu próprio HTML, CSS e JS, ou use o padrão;
+3. Construa a sua página de manutenção, definindo o seu próprio HTML, CSS e JS, ou use o padrão;
 
-4. Apenas administradores logados poderão ver o site, MAS é possível incluir vários endereços de IP que também poderão ter acesso normal ao site.
+4. Apenas administradores logados poderão ver o site, mas é possível incluir vários endereços de IP que também poderão ter acesso.
 
 == Installation ==
 
