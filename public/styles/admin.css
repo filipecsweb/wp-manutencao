@@ -1,0 +1,21 @@
+table.page_type,
+table.redirect_type {
+    display: none;
+}
+
+table.page_type.active,
+table.redirect_type.active {
+    display: table;
+}
+
+textarea {
+    font-family: monospace;
+}
+
+.wp-manutencao form .section {
+    display: none;
+}
+
+.wp-manutencao form .section.active {
+    display: block;
+}

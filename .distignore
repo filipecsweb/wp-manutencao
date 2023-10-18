@@ -27,5 +27,4 @@ phpcs.ruleset.xml
 phpunit.xml
 phpunit.xml.dist
 tests
-vendor
 wp-cli.local.yml
