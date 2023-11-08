@@ -52,31 +52,9 @@ else
 		# The --delete flag will delete anything in destination that no longer exists in source
 		rsync -rc --exclude-from="$GITHUB_WORKSPACE/.distignore" "$GITHUB_WORKSPACE/" trunk/ --delete --delete-excluded
 	else
-		echo "ℹ︎ Using .gitattributes"
-
-		cd "$GITHUB_WORKSPACE"
-
-		# "Export" a cleaned copy to a temp directory
-		TMP_DIR="${HOME}/archivetmp"
-		mkdir "$TMP_DIR"
-
-		git config --global user.email "10upbot+github@10up.com"
-		git config --global user.name "10upbot on GitHub"
-
-		# If there's no .gitattributes file, write a default one into place
-		if [[ ! -e "$GITHUB_WORKSPACE/.gitattributes" ]]; then
-			cat > "$GITHUB_WORKSPACE/.gitattributes" <<-EOL
-			/$ASSETS_DIR export-ignore
-			/.gitattributes export-ignore
-			/.gitignore export-ignore
-			/.github export-ignore
-			EOL
-
-			# Ensure we are in the $GITHUB_WORKSPACE directory, just in case
-			# The .gitattributes file has to be committed to be used
-			# Just don't push it to the origin repo :)
-			git add .gitattributes && git commit -m "Add .gitattributes file"
-		fi
+	  echo "🛑 File .distignore not found"
+    exit 1
+  fi
 
 		# This will exclude everything in the .gitattributes file with the export-ignore flag
 		git archive HEAD | tar x --directory="$TMP_DIR"
