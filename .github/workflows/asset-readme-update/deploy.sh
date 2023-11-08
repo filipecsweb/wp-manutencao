@@ -52,18 +52,8 @@ else
 		# The --delete flag will delete anything in destination that no longer exists in source
 		rsync -rc --exclude-from="$GITHUB_WORKSPACE/.distignore" "$GITHUB_WORKSPACE/" trunk/ --delete --delete-excluded
 	else
-	  echo "🛑 File .distignore not found"
+		echo "🛑 File .distignore not found"
     exit 1
-  fi
-
-		# This will exclude everything in the .gitattributes file with the export-ignore flag
-		git archive HEAD | tar x --directory="$TMP_DIR"
-
-		cd "$SVN_DIR"
-
-		# Copy from clean copy to /trunk, excluding dotorg assets
-		# The --delete flag will delete anything in destination that no longer exists in source
-		rsync -rc "$TMP_DIR/" trunk/ --delete --delete-excluded
 	fi
 fi
 
