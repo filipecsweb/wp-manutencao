@@ -45,7 +45,7 @@ class MaintenanceMode {
 		if ( ! empty( wpManutencao()->settings->getOption( 'ips' ) ) ) {
 			$ips = explode( ',', wpManutencao()->settings->getOption( 'ips' ) );
 			$ips = array_map( 'trim', $ips );
-			if ( in_array( wpManutencao()->utils->getTheUserIp(), $ips ) ) {
+			if ( in_array( wpManutencao()->utils->getTheUserIp(), $ips, true ) ) {
 				return;
 			}
 		}
