@@ -2,13 +2,15 @@
 
 Contributors: filiprimo
 Donate link: https://filipeseabra.me/doar/
-Tags: manutenção, maintenance, em breve, coming soon, construction, construction
+Tags: maintenance, coming soon, construction, under construction, offline
 Tested up to: 6.6
 Requires at least: 5.4
 Requires PHP: 7.4
 Stable tag: 1.0.7
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
+
+Coloque o seu site em manutenção de forma simples e objetiva.
 
 == Description ==
 
@@ -57,3 +59,5 @@ Coloque o seu site em manutenção de forma simples e objetiva. Ao mesmo tempo, 
 
 = 1.0.0 =
 * Lançamento do plugin
+
+== Upgrade Notice ==
