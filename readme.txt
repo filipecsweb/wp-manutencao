@@ -3,7 +3,7 @@
 Contributors: filiprimo
 Donate link: https://filipeseabra.me/doar/
 Tags: manutenção, maintenance, em breve, coming soon, construction, construction
-Tested up to: 6.4
+Tested up to: 6.6
 Requires at least: 5.4
 Requires PHP: 7.4
 Stable tag: 1.0.7
